@@ -13,7 +13,13 @@ export default defineConfig({
     }),
   ],
   output: {
-    distPath: 'dist',
+    distPath: { root: 'dist', js: 'static/js', css: 'static/css' },
+  },
+  server: {
+    // Força os caminhos do index.html a começarem com '/'
+    publicDir: {
+      name: './public',
+    },
   },
   tools: {
     bundlerChain: (chain, { CHAIN_ID }) => {
