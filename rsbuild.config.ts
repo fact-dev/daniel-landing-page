@@ -12,6 +12,9 @@ export default defineConfig({
       },
     }),
   ],
+  output: {
+    distPath: 'dist',
+  },
   tools: {
     bundlerChain: (chain, { CHAIN_ID }) => {
       chain.module

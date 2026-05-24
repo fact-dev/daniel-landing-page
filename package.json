@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "preview": "rsbuild preview"
   },
+  "main": "./src/index.tsx",
   "dependencies": {
     "@ant-design/icons": "6.x",
     "@babel/preset-react": "^7.28.5",
